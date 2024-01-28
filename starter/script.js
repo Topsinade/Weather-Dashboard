@@ -5,7 +5,7 @@ $(document).ready(function () {
       var cnt = 6;
       var apiKey = "6168024906cbfc2eddabc6965434b217";
       var queryURL =
-        "http://api.openweathermap.org/data/2.5/forecast/daily?q=" +
+        "http://api.openweathermap.org/geo/1.0/direct?q=" +
         searchString +
         "&cnt=" +
         cnt +
@@ -21,6 +21,7 @@ $(document).ready(function () {
         .then(function (data) {
           console.log(data);
         });
+
     });
   });
 
